@@ -3,7 +3,22 @@
   "description": "List of all countries with names and ISO 3166-1 codes in all languages and data formats.",
   "version": "1.0.0",
   "homepage": "http://github.com/umpirsky/country-list",
-  "repository": "git://github.com/umpirsky/country-list.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/umpirsky/country-list.git"
+  },
   "author": "Saša Stamenković <umpirsky@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/umpirsky/country-list/issues"
+  },
+  "main": "build.js",
+  "scripts": {
+    "build": "mkdir -p output; node build -d output",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
 }
